@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: Image.asset('images/example.jpeg'),
+            child: Image.network('https://images.unsplash.com/photo-1532465614-6cc8d45f647f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'),
           ),
         ),
       ),
