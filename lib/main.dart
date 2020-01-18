@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
- 
+import 'package:hello_world/icon-widgets.dart';
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
@@ -11,30 +11,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('This is title'),
         ),
-        body: Container(
-          child: Row(
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  Icon(Icons.photo_album),
-                  Text('Album'),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Icon(Icons.photo_album),
-                  Text('Album'),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Icon(Icons.photo_library),
-                  Text('Album'),
-                ],
-              ),
-            ],
-          ),
-        )
+        body: IconWidget()
       ),
     );
   }
