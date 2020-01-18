@@ -16,7 +16,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('This is title'),
         ),
-        body: HomePageAndroid(),
+        body: Column(
+          children: <Widget>[
+            HomePageAndroid(),
+            HomePageIOS(),
+          ],
+        )
+        
       ),
     );
   }
