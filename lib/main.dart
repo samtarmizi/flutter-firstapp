@@ -14,8 +14,24 @@ class MyApp extends StatelessWidget {
         body: Container(
           child: Row(
             children: <Widget>[
-              Text('First'),
-              Text('Second'),
+              Column(
+                children: <Widget>[
+                  Icon(Icons.photo_album),
+                  Text('Album'),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Icon(Icons.photo_album),
+                  Text('Album'),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Icon(Icons.photo_library),
+                  Text('Album'),
+                ],
+              ),
             ],
           ),
         )
