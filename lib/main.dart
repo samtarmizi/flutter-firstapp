@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: Text('This is child body'),
+            child: Image.asset('images/example.jpeg'),
           ),
         ),
       ),
