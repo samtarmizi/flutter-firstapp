@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             HomePageAndroid(),
             HomePageIOS(),
+            SnackBarDemo(),
           ],
         )
         
@@ -92,6 +93,31 @@ class HomePageAndroid extends StatelessWidget {
           );
         },
         child: Text('Show AlertDialog'),
+      ),
+    );
+  }
+}
+
+class SnackBarDemo extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: RaisedButton(
+        child: Text('Show Snackbar'),
+        onPressed: (){
+          final snackbar = SnackBar(
+            content: Text('Hi'),
+            action: SnackBarAction(
+              label: '>',
+              onPressed: (){
+                // code here
+                print('Close Snackbar');
+              },
+            ),
+          );
+          Scaffold.of(context).showSnackBar(snackbar);
+        },
       ),
     );
   }
