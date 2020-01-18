@@ -11,11 +11,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('This is title'),
         ),
-        body: Row(
-          children: <Widget>[
-            Text('First'),
-            Text('Second'),
-          ],
+        body: Container(
+          child: Row(
+            children: <Widget>[
+              Text('First'),
+              Text('Second'),
+            ],
+          ),
         )
       ),
     );
