@@ -3,6 +3,10 @@ import 'package:hello_world/icon-widgets.dart';
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
+
+  void testfunction(){
+    print('Hello there!');
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +23,7 @@ class MyApp extends StatelessWidget {
               child: Text('OK'),
               onPressed: (){
                 //our codes
-                print('Hello there!');
+                testfunction();
               },
             )
           ],
