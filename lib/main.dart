@@ -15,19 +15,22 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('This is title'),
         ),
-        body: Column(
-          children: <Widget>[
-            IconWidget(),
-            IconWidget(),
-            RaisedButton(
-              child: Text('OK'),
-              onPressed: (){
-                //our codes
-                testfunction();
-              },
-            )
-          ],
-        )
+        body: HomePage(),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: RaisedButton(
+        child: Text('Open Alert'), 
+        onPressed: (){
+          print('Open Alert Box');
+        },
       ),
     );
   }
